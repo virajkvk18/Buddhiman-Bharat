@@ -1,0 +1,45 @@
+{
+  "fundamental_rights": [
+    "Every Indian citizen aged 18+ has the right to vote (Article 326)",
+    "You cannot be turned away from voting due to caste, religion, sex, or race",
+    "You are entitled to a secret ballot — no one can compel you to reveal your vote",
+    "You can vote even if your name has a minor spelling error in the electoral roll",
+    "Differently-abled voters get priority access and assistance at polling booths",
+    "Voters in essential services can apply for postal ballot",
+    "You have the right to NOTA (None of the Above) if unsatisfied with all candidates"
+  ],
+  "documents_accepted": [
+    "Voter ID Card (EPIC)",
+    "Aadhaar Card",
+    "Passport",
+    "Driving Licence",
+    "MNREGA Job Card",
+    "Health Insurance Smart Card (RSBY)",
+    "Passbook with photo (Bank/Post Office)",
+    "PAN Card",
+    "Smart Card issued by RGI under NPR",
+    "Pension document with photo",
+    "Service identity cards with photo (Central/State Govt employees)",
+    "Official identity cards issued to MPs/MLAs/MLCs"
+  ],
+  "voter_checklist": [
+    {"step": 1, "task": "Check your name in the electoral roll at voterportal.eci.gov.in", "url": "https://voterportal.eci.gov.in"},
+    {"step": 2, "task": "Download/locate your Voter ID (EPIC)", "url": "https://nvsp.in"},
+    {"step": 3, "task": "Know your polling booth via the Voter Helpline App or SMS", "url": null},
+    {"step": 4, "task": "Check the election date and phase for your constituency", "url": "https://eci.gov.in"},
+    {"step": 5, "task": "Carry a valid photo ID on polling day", "url": null},
+    {"step": 6, "task": "Arrive at your polling station 30 minutes early", "url": null},
+    {"step": 7, "task": "Collect your voter slip from the Presiding Officer", "url": null},
+    {"step": 8, "task": "Press the button next to your chosen candidate on the EVM", "url": null},
+    {"step": 9, "task": "Verify your vote on the VVPAT slip (visible for 7 seconds)", "url": null},
+    {"step": 10, "task": "Apply the indelible ink mark — proof you voted!", "url": null}
+  ],
+  "model_code_of_conduct_key_points": [
+    "No new government schemes or projects can be announced after MCC kicks in",
+    "Political parties cannot use religion, caste or community to solicit votes",
+    "Government vehicles cannot be used for election campaigns",
+    "Candidates must submit election expenditure statements within 30 days of results",
+    "Polling booths must be within 2km of every voter",
+    "Polling day is a paid holiday for government employees"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "general_election_2024": {
+    "name": "18th Lok Sabha General Election",
+    "year": 2024,
+    "total_seats": 543,
+    "phases": 7,
+    "dates": "April 19 - June 1, 2024",
+    "result_date": "June 4, 2024",
+    "turnout_percent": 65.79,
+    "results": {
+      "BJP": {"seats": 240, "vote_share": 36.56},
+      "INC": {"seats": 99, "vote_share": 21.19},
+      "SP": {"seats": 37, "vote_share": 6.23},
+      "TMC": {"seats": 29, "vote_share": 5.37},
+      "DMK": {"seats": 22, "vote_share": 3.65},
+      "TDP": {"seats": 16, "vote_share": 2.14},
+      "JDU": {"seats": 12, "vote_share": 1.73},
+      "Others": {"seats": 88, "vote_share": 23.13}
+    }
+  },
+  "assembly_elections_2024": [
+    {
+      "state": "Andhra Pradesh",
+      "state_code": "AP",
+      "month": "June 2024",
+      "seats": 175,
+      "winner": "TDP+BJP+JSP Alliance",
+      "winner_seats": 164,
+      "runner_up": "YSRCP",
+      "runner_up_seats": 11,
+      "turnout": 81.86
+    },
+    {
+      "state": "Haryana",
+      "state_code": "HR",
+      "month": "October 2024",
+      "seats": 90,
+      "winner": "BJP",
+      "winner_seats": 48,
+      "runner_up": "INC",
+      "runner_up_seats": 37,
+      "turnout": 67.9
+    },
+    {
+      "state": "Jammu & Kashmir",
+      "state_code": "JK",
+      "month": "October 2024",
+      "seats": 90,
+      "winner": "NC+INC Alliance",
+      "winner_seats": 49,
+      "runner_up": "BJP",
+      "runner_up_seats": 29,
+      "turnout": 63.45
+    },
+    {
+      "state": "Maharashtra",
+      "state_code": "MH",
+      "month": "November 2024",
+      "seats": 288,
+      "winner": "Mahayuti (BJP+SS+NCP)",
+      "winner_seats": 230,
+      "runner_up": "MVA (INC+SS-UBT+NCP-SP)",
+      "runner_up_seats": 50,
+      "turnout": 66.05
+    },
+    {
+      "state": "Jharkhand",
+      "state_code": "JH",
+      "month": "November 2024",
+      "seats": 81,
+      "winner": "INDIA Alliance (JMM+INC)",
+      "winner_seats": 56,
+      "runner_up": "NDA (BJP)",
+      "runner_up_seats": 24,
+      "turnout": 68.45
+    }
+  ],
+  "upcoming_elections_2025_2026": [
+    {
+      "state": "Bihar",
+      "state_code": "BR",
+      "expected": "November 2025",
+      "seats": 243,
+      "type": "Assembly"
+    },
+    {
+      "state": "Delhi",
+      "state_code": "DL",
+      "expected": "February 2026",
+      "seats": 70,
+      "type": "Assembly"
+    },
+    {
+      "state": "West Bengal",
+      "state_code": "WB",
+      "expected": "April-May 2026",
+      "seats": 294,
+      "type": "Assembly"
+    },
+    {
+      "state": "Tamil Nadu",
+      "state_code": "TN",
+      "expected": "April 2026",
+      "seats": 234,
+      "type": "Assembly"
+    },
+    {
+      "state": "Kerala",
+      "state_code": "KL",
+      "expected": "April 2026",
+      "seats": 140,
+      "type": "Assembly"
+    },
+    {
+      "state": "Assam",
+      "state_code": "AS",
+      "expected": "April 2026",
+      "seats": 126,
+      "type": "Assembly"
+    },
+    {
+      "state": "Puducherry",
+      "state_code": "PY",
+      "expected": "April 2026",
+      "seats": 30,
+      "type": "Assembly"
+    }
+  ]
+}
