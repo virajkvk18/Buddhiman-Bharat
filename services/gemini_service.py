@@ -126,7 +126,7 @@ def call_gemini_streaming(
     election_data=None,
     state_code: str = "",
     language: str = "en",
-):
+) -> Generator[str, None, None]:
     """Call Gemini with streaming — yields text chunks as a generator."""
     if not GOOGLE_API_KEY:
         yield f"⚠️ AI not configured. Add `GOOGLE_API_KEY` to `.env`.\n\nECI Helpline: **{INDIA['VOTER_HELPLINE']}**"
@@ -192,7 +192,7 @@ def detect_language_from_text(text: str) -> str:
     return "en"
 
 
-def get_quick_answers(query: str):
+def get_quick_answers(query: str) -> Optional[str]:
     """Return instant answers for very common voter queries — no API call needed."""
     q = query.lower().strip()
 
