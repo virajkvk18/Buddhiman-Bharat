@@ -9,6 +9,18 @@ from config.settings import PARTIES
 from services.election_api import get_national_result_summary, get_state_assembly_history
 
 
+@st.cache_data(ttl=300, show_spinner=False)
+def _cached_national_results() -> dict:
+    """Cached wrapper for national result summary (5-min TTL)."""
+    return get_national_result_summary()
+
+
+@st.cache_data(ttl=300, show_spinner=False)
+def _cached_state_history(state_code: str) -> list:
+    """Cached wrapper for state assembly history (5-min TTL)."""
+    return get_state_assembly_history(state_code)
+
+
 def render_results_dashboard(state_code: str = "", state_name: str = "India") -> None:
     """Render election results tab."""
     st.markdown(f"## 📊 Election Results — {state_name}")
@@ -29,7 +41,7 @@ def render_results_dashboard(state_code: str = "", state_name: str = "India") ->
 
 def _render_lok_sabha_results() -> None:
     """Render 2024 Lok Sabha national results."""
-    data = get_national_result_summary()
+    data = _cached_national_results()
     if not data:
         st.info("Election data loading…")
         return
@@ -160,7 +172,7 @@ def _render_assembly_results() -> None:
 
 def _render_state_trends(state_code: str) -> None:
     """Render historical election trends for a state."""
-    history = get_state_assembly_history(state_code)
+    history = _cached_state_history(state_code)
 
     if not history:
         st.info("Select a specific state to see historical election trends.")
