@@ -65,8 +65,10 @@ def cached(ttl: int = TTL_ELECTION_DATA) -> Callable:
             ...
     """
     def decorator(fn: Callable) -> Callable:
+        """Wrap function with TTL caching logic."""
         @wraps(fn)
         def wrapper(*args: Any, **kwargs: Any) -> Any:
+            """Check cache, call function on miss, store result."""
             key = f"{fn.__module__}.{fn.__qualname__}:{_make_key(*args, **kwargs)}"
             cached_val = get(key)
             if cached_val is not None:
