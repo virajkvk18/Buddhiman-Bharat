@@ -289,6 +289,24 @@ def main() -> None:
     st.markdown(ACCESSIBILITY_CSS, unsafe_allow_html=True)
     st.markdown(SKIP_LINK_HTML, unsafe_allow_html=True)
 
+    # Security headers + lang attribute (injected via meta tags)
+    st.markdown(
+        """
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+        <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:;
+                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+                   font-src https://fonts.gstatic.com; img-src 'self' data: https:;
+                   frame-src https://maps.google.com https://www.google.com;">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <script>document.documentElement.setAttribute('lang',
+          (window.__streamlit_session_state && window.__streamlit_session_state.language) || 'en');
+        </script>
+        """,
+        unsafe_allow_html=True,
+    )
+
     render_topnav()
 
     # Show home screen if no location set
